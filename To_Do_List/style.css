@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.input {
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.input::placeholder {
+    color: #ddd;
+}
+
+.todos {
+    list-style: none;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0;
+}
+
+.todos li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.todos li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.todos li.completed {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+.delete-all {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.delete-all:hover {
+    background: darkred;
+}
+
+small {
+    margin-top: 1rem;
+    color: #ddd;
+}
